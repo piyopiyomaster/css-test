@@ -1,3 +1,47 @@
+/* 全体のスタイル */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* 一覧リストのスタイル */
+.list-container {
+    padding: 10px;
+    box-sizing: border-box;
+    height: calc(100% - 60px); /* 下のボタンの高さを引く */
+    overflow-y: auto; /* リスト部分がスクロール可能に */
+    background-color: #f9f9f9;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 15px;
+    margin: 5px 0;
+    background-color: #ddd;
+    border-radius: 4px;
+}
+
+/* モーダル表示ボタンのスタイル */
+.fixed-btn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
 /* モーダルの基本スタイル */
 .modal {
     display: none; /* デフォルトでは非表示 */
@@ -7,10 +51,9 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* 背景を半透明に */
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* モーダルコンテンツのスタイル */
 .modal-content {
     background-color: white;
     margin: 15% auto;
@@ -21,25 +64,24 @@
     position: relative;
 }
 
-/* 閉じるボタンのスタイル */
+/* 閉じるボタン（span使用） */
 .close-btn {
     position: absolute;
     top: 10px;
-    right: 15px;
+    right: 10px;
     width: 30px;
     height: 30px;
-    background-color: lightgray;
-    border: none;
+    background-color: #ccc;
+    color: white;
     font-size: 24px;
-    line-height: 30px;
     text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
     cursor: pointer;
-    border-radius: 50%; /* 正円にする */
-    padding: 0;
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
 
-.close-btn:hover,
-.close-btn:focus {
-    color: #000;
-    text-decoration: none;
+.close-btn:hover {
+    background-color: #888;
 }

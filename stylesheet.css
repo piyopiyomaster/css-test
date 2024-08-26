@@ -26,16 +26,10 @@
     position: absolute;
     top: 10px;
     right: 15px;
-    width: 30px;
-    height: 30px;
-    background-color: lightgray;
-    border: none;
-    font-size: 24px;
-    line-height: 30px;
-    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
     cursor: pointer;
-    border-radius: 50%; /* 正円にする */
-    padding: 0;
+    background: litegray;
 }
 
 .close-btn:hover,

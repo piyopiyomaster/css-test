@@ -3,18 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>モーダル表示のサンプル</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <title>一覧とモーダルボタンのページ</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- モーダル表示ボタン -->
-    <button id="openModal">モーダルを開く</button>
+    <!-- 一覧画面 -->
+    <div class="list-container">
+        <h2>一覧リスト</h2>
+        <ul>
+            <!-- ダミーリストアイテム -->
+            <li>アイテム1</li>
+            <li>アイテム2</li>
+            <li>アイテム3</li>
+            <li>アイテム4</li>
+            <li>アイテム5</li>
+            <li>アイテム6</li>
+            <li>アイテム7</li>
+            <li>アイテム8</li>
+            <li>アイテム9</li>
+            <li>アイテム10</li>
+        </ul>
+    </div>
+
+    <!-- モーダル表示ボタン（固定） -->
+    <button id="openModal" class="fixed-btn">モーダルを開く</button>
 
     <!-- モーダル -->
     <div id="modal" class="modal">
         <div class="modal-content">
-            <!-- 閉じるボタン -->
-            <button class="close-btn">&times;</button>
+            <span class="close-btn">&times;</span>
             <h2>モーダルタイトル</h2>
             <p>これはモーダルの内容です。</p>
         </div>

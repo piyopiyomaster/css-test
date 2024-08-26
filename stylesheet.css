@@ -25,11 +25,18 @@
 .close-btn {
     position: absolute;
     top: 10px;
-    right: 15px;
-    font-size: 28px;
-    font-weight: bold;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%; /* 丸くする */
     cursor: pointer;
-    background: litegray;
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
 
 .close-btn:hover,

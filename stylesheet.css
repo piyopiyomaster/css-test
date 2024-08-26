@@ -10,7 +10,7 @@ body, html {
 .list-container {
     padding: 10px;
     box-sizing: border-box;
-    height: calc(100% - 60px); /* 下のボタンの高さを引く */
+    height: calc(100vh - 65px); /* 下のボタンの高さを引く */
     overflow-y: auto; /* リスト部分がスクロール可能に */
     background-color: #f9f9f9;
 }

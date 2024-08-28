@@ -1,23 +1,23 @@
-// モーダルを開くボタン
-const openModalBtn = document.getElementById("openModal");
-// モーダルそのもの
-const modal = document.getElementById("modal");
-// モーダル内の閉じるボタン
-const closeModalBtn = document.querySelector(".close-btn");
+let currentSlide = 0;
+const slides = document.querySelector('.slides');
+const dots = document.querySelectorAll('.dot');
 
-// モーダルを表示する処理
-openModalBtn.onclick = function() {
-    modal.style.display = "block";
-};
+function showSlide(index) {
+    const totalSlides = dots.length;
+    currentSlide = (index + totalSlides) % totalSlides;
+    slides.style.transform = `translateX(-${currentSlide * 100}%)`;
 
-// モーダルを閉じる処理
-closeModalBtn.onclick = function() {
-    modal.style.display = "none";
-};
+    dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === currentSlide);
+    });
+}
 
-// モーダルの外をクリックした場合に閉じる処理
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-};
+function nextSlide() {
+    showSlide(currentSlide + 1);
+}
+
+dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => showSlide(index));
+});
+
+setInterval(nextSlide, 3000); // 3秒ごとにスライド

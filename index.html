@@ -3,40 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>一覧とモーダルボタンのページ</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <title>Webアプリ</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- 一覧画面 -->
-    <div class="list-container">
-        <h2>一覧リスト</h2>
-        <ul>
-            <!-- ダミーリストアイテム -->
-            <li>アイテム1</li>
-            <li>アイテム2</li>
-            <li>アイテム3</li>
-            <li>アイテム4</li>
-            <li>アイテム5</li>
-            <li>アイテム6</li>
-            <li>アイテム7</li>
-            <li>アイテム8</li>
-            <li>アイテム9</li>
-            <li>アイテム10</li>
-        </ul>
-    </div>
+    <div id="app">
+        <div id="slideshow">
+            <div class="slides">
+                <img src="image1.jpg" alt="Slide 1">
+                <img src="image2.jpg" alt="Slide 2">
+                <img src="image3.jpg" alt="Slide 3">
+            </div>
+            <div class="dots">
+                <span class="dot" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+            </div>
+        </div>
 
-    <!-- モーダル表示ボタン（固定） -->
-    <button id="openModal" class="fixed-btn">モーダルを開く</button>
+        <div id="notifications">
+            <ul>
+                <li><a href="#">お知らせ1</a></li>
+                <li><a href="#">お知らせ2</a></li>
+                <li><a href="#">お知らせ3</a></li>
+                <!-- 他のお知らせも追加可能 -->
+            </ul>
+        </div>
 
-    <!-- モーダル -->
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>モーダルタイトル</h2>
-            <p>これはモーダルの内容です。</p>
+        <div id="buttons">
+            <button>ページ1</button>
+            <button>ページ2</button>
+            <button>ページ3</button>
+            <button>ページ4</button>
+            <button>ページ5</button>
+            <button>ページ6</button>
+        </div>
+
+        <div id="company-info">
+            <p>会社名: 株式会社Example</p>
+            <p>住所: 東京都新宿区123-456</p>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>

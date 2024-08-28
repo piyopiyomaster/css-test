@@ -79,13 +79,14 @@ body {
 }
 
 #button-section {
-    background-color: #f0f0f0;
+    background-color: #f0f0f0; /* セクション全体にグレーの背景色 */
     padding: 20px;
     width: 100vw;
     margin-left: -10px;
     margin-right: -10px;
     box-sizing: border-box;
     border-radius: 8px;
+    text-align: center; /* タイトルを中央に配置 */
 }
 
 #button-container {
@@ -110,8 +111,7 @@ body {
 }
 
 .section-title {
-    text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
-    margin: 10px 0;
+    margin-bottom: 20px; /* タイトルとボタンの間に余白を追加 */
 }

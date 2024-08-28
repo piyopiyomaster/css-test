@@ -78,17 +78,21 @@ body {
     margin: 5px 0;
 }
 
+#button-section {
+    background-color: #f0f0f0;
+    padding: 20px;
+    width: 100vw;
+    margin-left: -10px;
+    margin-right: -10px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
 #button-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
-    padding: 10px;
-    background-color: #f0f0f0;
-    width: 100vw;
-    margin-left: -10px;
-    margin-right: -10px;
-    box-sizing: border-box;
 }
 
 #button-container button {
@@ -106,8 +110,8 @@ body {
 }
 
 .section-title {
-    text-align: center; /* タイトルを中央に配置 */
-    font-family: 'Montserrat', sans-serif; /* おしゃれなフォント */
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     margin: 10px 0;
 }

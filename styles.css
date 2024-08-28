@@ -106,12 +106,17 @@ body {
 }
 
 #company-info {
-    padding: 10px;
+    padding: 20px;
     margin-top: 20px;
+    text-align: center; /* タイトルを中央に配置 */
+    background-color: #fff; /* 背景色を設定 (必要に応じて変更) */
+    border-radius: 8px; /* 角を少し丸める */
 }
 
 .section-title {
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
-    margin-bottom: 20px; /* タイトルとボタンの間に余白を追加 */
+    margin-bottom: 20px;
+    margin-top: 0; /* タイトルの上の余白をなくす */
+    text-align: center; /* タイトルを中央に配置 */
 }

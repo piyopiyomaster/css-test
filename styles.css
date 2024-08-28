@@ -53,12 +53,13 @@ body {
 }
 
 #notifications {
-    width: 90%;
+    width: 80%;
     overflow-y: auto;
-    margin: 20px 0;
+    margin: 20px auto;
     padding: 10px 20px;
     background-color: #fff;
     border-radius: 8px;
+    text-align: left;
     height: 200px;
 }
 
@@ -76,6 +77,12 @@ body {
 
 #notifications li {
     margin: 5px 0;
+}
+
+.news-date {
+    color: #888; /* 日付の色をグレーに */
+    margin-right: 10px; /* 日付とタイトルの間にスペースを追加 */
+    font-weight: bold;
 }
 
 #button-section {

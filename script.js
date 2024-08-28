@@ -5,7 +5,7 @@ const dots = document.querySelectorAll('.dot');
 function showSlide(index) {
     const totalSlides = dots.length;
     currentSlide = (index + totalSlides) % totalSlides;
-    slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+    slides.style.transform = `translateX(-${currentSlide * 100}vw)`;
 
     dots.forEach((dot, i) => {
         dot.classList.toggle('active', i === currentSlide);

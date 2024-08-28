@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#slideshow {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 100vw;
+    height: 100vw; /* 正方形にするために高さも幅に合わせる */
+    object-fit: cover;
+}
+
+.dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+#notifications {
+    width: 90%;
+    max-height: 150px;
+    overflow-y: auto;
+    margin: 20px 0;
+}
+
+#notifications ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#notifications li {
+    margin: 5px 0;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 90%;
+    margin: 20px 0;
+}
+
+#buttons button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#company-info {
+    text-align: center;
+    margin: 20px 0;
+}

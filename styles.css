@@ -60,6 +60,7 @@ body {
     padding: 10px 20px;
     background-color: #fff;
     border-radius: 8px;
+    height: 200px;
 }
 
 #notifications h2 {
@@ -87,6 +88,7 @@ body {
     box-sizing: border-box;
     border-radius: 8px;
     text-align: center; /* タイトルを中央に配置 */
+    height: 300px;
 }
 
 #button-container {
@@ -103,6 +105,7 @@ body {
     background-color: #007BFF; /* ボタンの色 */
     color: white;
     cursor: pointer;
+    height: 90px;
 }
 
 #company-info {
@@ -117,6 +120,18 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     margin-bottom: 20px;
-    margin-top: 0; /* タイトルの上の余白をなくす */
-    text-align: center; /* タイトルを中央に配置 */
+    margin-top: 0;
+    text-align: center;
+    position: relative; /* 下線を配置するために相対位置を設定 */
+    padding-bottom: 10px; /* タイトル下の余白を確保 */
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 60px; /* 下線の幅 */
+    border-bottom: 2px dotted #28a745; /* 緑色の点線下線 */
 }

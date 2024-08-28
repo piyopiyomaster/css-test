@@ -20,4 +20,4 @@ dots.forEach((dot, index) => {
     dot.addEventListener('click', () => showSlide(index));
 });
 
-setInterval(nextSlide, 3000); // 3秒ごとにスライド
+setInterval(nextSlide, 5000); // 3秒ごとにスライド

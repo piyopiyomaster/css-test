@@ -122,16 +122,17 @@ body {
     margin-bottom: 20px;
     margin-top: 0;
     text-align: center;
-    position: relative; /* 下線を配置するために相対位置を設定 */
-    padding-bottom: 10px; /* タイトル下の余白を確保 */
+    position: relative;
+    display: inline-block; /* タイトルの幅をコンテンツに合わせる */
+    padding-bottom: 10px; 
 }
 
 .section-title::after {
     content: '';
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    right: 0;
     bottom: 0;
-    width: 60px; /* 下線の幅 */
+    height: 2px;
     border-bottom: 2px dotted #28a745; /* 緑色の点線下線 */
 }

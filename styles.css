@@ -52,12 +52,12 @@ body {
 
 #notifications {
     width: 90%;
-    max-height: 150px;
     overflow-y: auto;
     margin: 20px 0;
     padding: 10px 20px; /* 左右に余白を追加 */
     background-color: #f0f0f0; /* グレーの背景色 */
     border-radius: 8px; /* 角を少し丸める */
+    height: 200px;
 }
 
 #notifications h2 {

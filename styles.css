@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'); /* フォントのインポート */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -52,10 +54,12 @@ body {
 
 #notifications {
     width: 90%;
+    max-height: 150px;
     overflow-y: auto;
     margin: 20px 0;
-    padding: 10px 20px; /* 左右に余白を追加 */
-    height: 150px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 8px;
 }
 
 #notifications h2 {
@@ -79,13 +83,12 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
-    padding: 40px 10px;
-    background-color: #f0f0f0; /* グレーの背景色 */
-    width: 100vw; /* 画面の横幅いっぱいに広げる */
-    margin-left: -10px; /* 左右の余白を無効にする */
+    padding: 10px;
+    background-color: #f0f0f0;
+    width: 100vw;
+    margin-left: -10px;
     margin-right: -10px;
     box-sizing: border-box;
-    height: 300px;
 }
 
 #button-container button {
@@ -98,6 +101,13 @@ body {
 }
 
 #company-info {
-    text-align: center;
-    margin: 20px 0;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.section-title {
+    text-align: center; /* タイトルを中央に配置 */
+    font-family: 'Montserrat', sans-serif; /* おしゃれなフォント */
+    font-size: 24px;
+    margin: 10px 0;
 }

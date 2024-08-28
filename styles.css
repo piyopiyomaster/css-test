@@ -55,7 +55,7 @@ body {
     overflow-y: auto;
     margin: 20px 0;
     padding: 10px 20px; /* 左右に余白を追加 */
-    border-radius: 8px; /* 角を少し丸める */
+    height: 150px;
 }
 
 #notifications h2 {
@@ -79,13 +79,13 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
-    padding: 10px;
+    padding: 40px 10px;
     background-color: #f0f0f0; /* グレーの背景色 */
-    border-radius: 8px; /* 角を少し丸める */
     width: 100vw; /* 画面の横幅いっぱいに広げる */
     margin-left: -10px; /* 左右の余白を無効にする */
     margin-right: -10px;
     box-sizing: border-box;
+    height: 300px;
 }
 
 #button-container button {

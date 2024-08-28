@@ -129,8 +129,8 @@ body {
     margin-top: 0;
     text-align: center;
     position: relative;
-    display: inline-block; /* タイトルの幅をコンテンツに合わせる */
-    padding-bottom: 10px; 
+    padding-bottom: 10px;
+    display: inline-block; /* タイトルの幅を文字の幅に合わせる */
 }
 
 .section-title::after {
@@ -140,5 +140,5 @@ body {
     right: 0;
     bottom: 0;
     height: 2px;
-    border-bottom: 2px dotted #119830; /* 緑色の点線下線 */
+    border-bottom: 2px dotted #28a745; /* 緑色の点線の下線 */
 }

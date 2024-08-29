@@ -132,7 +132,7 @@ body {
     text-align: center;
     position: relative;
     padding-bottom: 10px;
-    display: inline-block; /* タイトルの幅を文字の幅に合わせる */
+    display: block; /* タイトルの幅を文字の幅に合わせる */
 }
 
 .section-title::after {
@@ -142,5 +142,7 @@ body {
     right: 0;
     bottom: 0;
     height: 2px;
-    border-bottom: 2px dotted #28a745; /* 緑色の点線の下線 */
+    border-bottom: 2px dotted #038320; /* 緑色の点線の下線 */
+    width: 40vw;
+    justify-self: center;
 }

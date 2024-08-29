@@ -165,5 +165,5 @@ body {
     height: 2px;
     border-bottom: 2px dotted #038320; /* 緑色の点線の下線 */
     width: 140px;
-    justify-self: center;
+    margin: auto;
 }

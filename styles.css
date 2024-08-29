@@ -61,6 +61,7 @@ body {
     border-radius: 8px;
     text-align: left;
     height: 200px;
+    position: relative;
 }
 
 #notifications h2 {
@@ -84,6 +85,27 @@ body {
 .news-date {
     color: #616d40; /* 日付の色をグレーに */
     margin-right: 10px; /* 日付とタイトルの間にスペースを追加 */
+}
+
+.more-button-container {
+    text-align: center; /* ボタンを中央に配置 */
+    margin-top: 20px;
+}
+
+.more-button {
+    background-color: #28a745; /* ボタンの背景色 */
+    color: white; /* ボタンの文字色 */
+    border: none;
+    border-radius: 20px; /* 丸い角 */
+    padding: 10px 30px; /* ボタンのサイズ */
+    font-size: 16px; /* ボタンの文字サイズ */
+    cursor: pointer;
+    outline: none;
+    display: inline-block; /* 横長にするため */
+}
+
+.more-button:hover {
+    background-color: #218838; /* ホバー時の色 */
 }
 
 #button-section {
